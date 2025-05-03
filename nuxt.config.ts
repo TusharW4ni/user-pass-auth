@@ -7,4 +7,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  runtimeConfig: {
+    RESEND_API_KEY: "",
+  },
 });

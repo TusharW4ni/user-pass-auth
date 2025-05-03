@@ -1,0 +1,11 @@
+meta {
+  name: send-reset-pass-code-email
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/email/send-reset-pass-code
+  body: none
+  auth: inherit
+}

@@ -9,5 +9,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     RESEND_API_KEY: "",
+    PEPPER: "",
   },
 });

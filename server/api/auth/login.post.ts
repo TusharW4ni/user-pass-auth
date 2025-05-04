@@ -51,6 +51,6 @@ export default defineEventHandler(async (event) => {
   } catch (error) {
     console.error("Login error:", error);
     setResponseStatus(event, 500);
-    return { error: "An internal server error occurred" };
+    return { message: "Errored logging in" };
   }
 });

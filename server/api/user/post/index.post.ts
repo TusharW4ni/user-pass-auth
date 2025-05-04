@@ -37,10 +37,10 @@ export default defineEventHandler(async (event) => {
   } catch (e: any) {
     if (e.code === "P2002" && e.meta?.target?.includes("email")) {
       setResponseStatus(event, 409);
-      return { error: "User with this email already exists" };
+      return { message: "User with this email already exists" };
     }
     console.error("Error creating user:", e);
     setResponseStatus(event, 500);
-    return { error: "An error occurred while creating the user" };
+    return { message: "An error occurred while creating the user" };
   }
 });
